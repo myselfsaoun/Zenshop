@@ -1,0 +1,24 @@
+.orderCard {
+    width: 40%;
+    flex-grow: 1;
+
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+
+    .cardTitle {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .cardoItem {
+        display: flex;
+        gap: 20px;
+        margin: 13px 0px;
+        color: #444;
+
+        .cardValue {
+            font-weight: 300;
+        }
+    }
+}

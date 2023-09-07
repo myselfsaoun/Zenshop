@@ -1,0 +1,74 @@
+.user {
+
+    .userTitleContainer {
+        color: gray;
+        font-size: 22px;
+    }
+
+    .userTop {
+        display: flex;
+        margin-top: 15px;
+
+        .userLeft {
+            flex: 1;
+            padding: 20px;
+            -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+
+            .userInfoTop {
+                display: flex;
+                align-items: center;
+
+                .userInfoImg {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-right: 20px;
+                }
+
+                .userInfoTitle {
+                    .username {
+                        font-weight: 600;
+                        text-transform: capitalize;
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            .userInfoBottom {
+                margin-top: 20px;
+
+                .userInfoTitle {
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: rgb(175, 170, 170);
+                }
+
+                .userInfoItem {
+                    display: flex;
+                    align-items: center;
+                    margin: 20px 0px;
+                    color: #444;
+
+                    .userInfoIcon {
+                        font-size: 16px !important;
+                    }
+
+                    .userInfoValue {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        .userRight {
+            flex: 2;
+            margin-left: 20px;
+        }
+    }
+
+    .userBottom {
+        margin-top: 30px;
+    }
+}

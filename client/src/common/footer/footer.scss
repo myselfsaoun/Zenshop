@@ -1,0 +1,160 @@
+@import '../../app.scss';
+
+.footer {
+    width: 100%;
+    // margin: 100px 200px 20px 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+
+    .top {
+        display: flex;
+        gap: 50px;
+        
+        .item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: justify;
+            font-size: 14px;
+
+            h1 {
+                font-size: 18px;
+                font-weight: 500;
+                color: #555;
+            }
+
+            span {
+                color: gray;
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+
+        .left {
+            display: flex;
+            align-items: center;
+
+            .logo {
+                color: #2879fe;
+                font-weight: bold;
+                font-size: 24px;
+            }
+
+            .copyright {
+                margin-left: 20px;
+                font-size: 12px;
+                color: gray;
+                font-weight: 500;
+            }
+        }
+
+        .right {
+
+            img {
+                height: 50px;
+            }
+        }
+    }
+
+    @include mobile {
+        & {
+            margin-top: 0;
+            padding: 20px;
+        }
+
+        .top {
+            display: none;
+        }
+
+        .bottom {
+            width: 100%;
+            display: block;
+
+            .left {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;             
+            }
+
+            .right {
+                display: none;
+            }
+        }
+    }
+
+    @include tablet {
+        & {
+            margin-top: 0;
+            padding: 20px;
+        }
+
+        .top {
+            display: none;
+        }
+
+        .bottom {
+            width: 100%;
+            display: block;
+
+            .left {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+
+                .logo {
+                    font-size: 24px;
+                }
+                
+                .copyright {
+                    font-size: 16px;
+                }
+            }
+
+            .right {
+                display: none;
+            }
+        }
+    }
+
+    @include laptop {
+        & {
+            margin-top: 10;
+            padding: 10px 30px;
+        }
+
+        .top {
+            display: flex;
+        }
+
+        .bottom {
+            width: 100%;
+            display: flex;
+
+            .left {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+
+                .logo {
+                    font-size: 24px;
+                }
+                
+                .copyright {
+                    font-size: 14px;
+                }
+            }
+
+            .right {
+                display: block;
+            }
+        }
+    }
+}

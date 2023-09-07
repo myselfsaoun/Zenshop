@@ -1,0 +1,44 @@
+.order {
+
+    .orderTitleContainer {
+        color: gray;
+    }
+
+    .orderTop {
+        margin: 15px 0px;
+        -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+        padding: 20px;
+
+        .orderInfoItem {
+            display: flex;
+            margin: 13px 0px;
+            color: #444;
+
+            .orderInfoKey {
+                flex: 1;
+                margin-right: 5px;
+            }
+
+            .orderInfoValue {
+                flex: 5;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .orderedProductTitleContainer {
+        margin: 30px 0px 15px 0px;
+
+        .orderedProductTitle {
+            color: gray;
+        }
+    }
+
+    .orderBottom {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}

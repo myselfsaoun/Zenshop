@@ -1,0 +1,112 @@
+.productUpdate {
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+
+    .productUpdateTitle {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .productUpdateForm {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+
+        .productUpdateFormWrapper {
+            display: flex;
+            gap: 30px;
+
+            .productUpdateLeft {
+                flex: 2;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                justify-content: space-between;
+
+                .productUpdateItem {
+                    width: 40%;
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        margin: 5px 0;
+                        font-size: 14px;
+                    }
+
+                    .productUpdateInput {
+                        border: none;
+                        width: 100%;
+                        padding: 7px;
+                        border-bottom: 1px solid gray;
+                        outline: none;
+                    }
+
+                    select {
+                        width: 100%;
+                        padding: 5px;
+                        margin-top: 5px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+
+            .productUpdateRight {
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+
+                .productUpdateWrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .productUpdateUpload {
+                        display: flex;
+                        align-items: center;
+
+                        .productUpdateImg {
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 10px;
+                            object-fit: cover;
+                            margin-right: 20px;
+                        }
+
+                        .productUpdateIcon {
+                            cursor: pointer;
+                        }
+                    }
+
+                    .productUpdateButton {
+                        width: 145px;
+                        border-radius: 5px;
+                        border: none;
+                        padding: 5px;
+                        cursor: pointer;
+                        background-color: darkblue;
+                        color: white;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        .submit {
+            margin-top: 15px;
+            width: 100%;
+
+            button {
+                width: 100%;
+                border: none;
+                padding: 10px;
+                background-color: teal;
+                color: white;
+                border-radius: 20px;
+                font-size: 18px;
+                cursor: pointer;
+            }
+        }
+    }
+}

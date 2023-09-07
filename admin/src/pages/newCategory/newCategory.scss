@@ -1,0 +1,110 @@
+.newCategory {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .top, .bottom {
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        
+        h1 {
+            color: lightgray;
+            font-size: 20px;
+        }
+    }
+
+    .top {
+        padding: 20px;
+    }
+
+    .bottom {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .wrapper {
+            display: flex;
+            gap: 30px; 
+            
+            .left {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+    
+                .leftWrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+    
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+        
+                    button {
+                        width: 120px;
+                        border-radius: 5px;
+                        border: none;
+                        padding: 7px;
+                        cursor: pointer;
+                        background-color: darkblue;
+                        color: white;
+                        font-weight: 600;
+                    }
+                }
+            }
+    
+            .right {
+                flex: 1;
+    
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+    
+                    .formInput {
+                        width: 60%;
+    
+                        label {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            margin-bottom: 5px;
+    
+                            .icon {
+                                cursor: pointer;
+                            }
+                        }
+    
+                        input {
+                            width: 100%;
+                            padding: 7px;
+                            border: none;
+                            border-bottom: 1px solid gray;
+                            outline: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .submit {
+            margin-top: 15px;
+            width: 100%;
+
+            button {
+                width: 100%;
+                border: none;
+                padding: 10px;
+                background-color: teal;
+                color: white;
+                border-radius: 20px;
+                font-size: 18px;
+                cursor: pointer;
+            }
+        }
+    }
+}

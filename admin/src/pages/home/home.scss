@@ -1,0 +1,14 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .charts {
+        display: flex;
+        gap: 20px;
+    }
+
+    .homeWidgets{
+        display: flex;
+    }
+}

@@ -1,0 +1,114 @@
+@import '../../app.scss';
+
+.products {
+    height: 100%;
+    padding: 30px;
+    display: flex;
+
+    .left {
+        flex: 1;
+        height: max-content;
+        overflow: hidden;
+        position: sticky;
+        top: 20px;
+
+        .filterItem {
+            margin-bottom: 30px;
+
+            h2 {
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+
+            .inputItem {
+                margin-bottom: 10px;
+
+                label {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .right {
+        flex: 3;
+
+        .catImg {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 50px;
+        }
+    }
+
+    @include mobile {
+        & {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            .left {
+                position: relative;
+            }
+
+            .right {
+                .catImg {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @include tablet {
+        & {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            .left {
+                position: relative;
+                display: flex;
+                gap: 20px;
+                margin-bottom: 20px;
+
+                .filterItem {
+                    flex: 1;
+                }
+            }
+
+            .right {
+                .catImg {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @include laptop {
+        & {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-bottom: 20px;
+
+            .left {
+                position: sticky;
+                top: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+
+                .filterItem {
+                    flex: 0;
+                }
+            }
+
+            .right {
+                .catImg {
+                    display: block;
+                }
+            }
+        }
+    }
+}

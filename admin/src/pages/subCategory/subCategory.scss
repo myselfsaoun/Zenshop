@@ -1,0 +1,48 @@
+.subCategory {
+
+    .subCategoryTitleContainer {
+        margin-bottom: 15px;
+        color: gray;
+    }
+
+    .subCategoryTop {
+        padding: 20px;
+        -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+
+        .subCategoryInfoTop {
+            .subCategoryName {
+                font-weight: 600;
+                text-transform: capitalize;
+                font-size: 24px;
+            }
+        }
+
+        .subCategoryInfoBottom {
+            margin-top: 20px;
+
+            .subCategoryInfoItem {
+                display: flex;
+                margin: 13px 0px;
+                color: #444;
+
+                .subCategoryInfoKey {
+                    flex: 1;
+                }
+
+                .subCategoryInfoValue {
+                    flex: 6;
+                    font-weight: 300;
+
+                    span {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .subCategoryBottom {
+        margin-top: 30px;
+    }
+}

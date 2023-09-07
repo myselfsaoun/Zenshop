@@ -1,0 +1,55 @@
+.category {
+    
+    .categoryTitleContainer {
+        margin-bottom: 15px;
+        color: gray;
+    }
+
+    .categoryTop {
+        padding: 20px;
+        -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+
+        .categoryInfoTop {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            .categoryInfoImg {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .categoryName {
+                font-weight: 600;
+                text-transform: capitalize;
+                font-size: 24px;
+            }
+        }
+
+        .categoryInfoBottom {
+            margin-top: 20px;
+
+            .categoryInfoItem {
+                display: flex;
+                margin: 13px 0px;
+                color: #444;
+
+                .categoryInfoKey {
+                    flex: 1;
+                }
+
+                .categoryInfoValue {
+                    flex: 6;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+    .categoryBottom {
+        margin-top: 30px;
+    }
+}

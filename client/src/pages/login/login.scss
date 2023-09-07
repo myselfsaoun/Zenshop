@@ -1,0 +1,177 @@
+@import '../../app.scss';
+
+section {
+    width: 100%;
+    padding: 10px;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    .form_data {
+        width: 600px;
+        margin: 25px auto;
+        padding: 25px 15px;
+        box-shadow: 0 0 15px -10px #2d3748;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .form_heading {
+            h1 {
+                text-align: center;
+                font-size: 34px;
+                color: #2a4365;
+            }
+        }
+
+        form {
+            margin-top: 35px;
+            width: 100%;
+            padding: 10px 50px;
+        
+            .form_input {
+                input {
+                    width: 100%;
+                    padding: 11px;
+                    border: 1px solid #d4d0d0;
+                    border-radius: 5px;
+                    outline: none;
+                    margin-bottom: 14px;
+                    margin-top: 9px;
+                    font-size: 14px;
+        
+                    &:focus {
+                        border: 2px solid rgba(66, 153, 225, 0.6);
+                    }
+        
+                    &::placeholder {
+                        color: #8694a8;
+                        letter-spacing: .5px;
+                        font-size: 14px;
+                    }
+                }
+        
+                label {
+                    font-weight: 600;
+                    font-size: 15px;
+                }
+        
+                .two {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                }
+        
+                .showpass {
+                    position: absolute;
+                    right: 0;
+                    top: 1px;
+                    padding: 7px 10px;
+                    margin-right: 5px;
+                    margin-top: 12px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #2a4365;
+                    background-color: #EDF2F7;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+        
+            .btn {
+                display: block;
+                width: 100%;
+                padding: 15px;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                background-color: #1a365d;
+                color: #fff;
+                font-weight: 600;
+                font-size: 18px;
+                margin-top: 10px;
+                cursor: pointer;
+                transition: all .3s;
+                
+                &:hover {
+                    background-color: #97a1b1;
+                }
+            }
+        
+            p {
+                text-align: center;
+                margin-top: 20px;
+            }
+        
+            a {
+                text-decoration: none;
+                color: #718096;
+                border-bottom: 2px solid #8694a8;
+            }
+        }
+
+        @include mobile {
+            width: 90%;
+
+            .form_heading {
+                h1 {
+                    font-size: 24px;
+                }
+            }
+
+            form {
+                margin-top: 25px;
+                padding: 10px 20px;
+
+                p, a {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        @include tablet {
+            width: 60%;
+
+            .form_heading {
+                h1 {
+                    font-size: 28px;
+                }
+            }
+
+            form {
+                margin-top: 30px;
+                padding: 10px 30px;
+
+                p, a {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        @include laptop {
+            width: 50%;
+
+            .form_heading {
+                h1 {
+                    font-size: 28px;
+                }
+            }
+
+            form {
+                margin-top: 25px;
+                padding: 10px 30px;
+
+                p, a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+
+

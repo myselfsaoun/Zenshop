@@ -1,0 +1,23 @@
+.lists {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .productList {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .productNull {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 60px;
+        color: red;
+        font-size: 24px;
+        margin: 120px 0;
+    }
+}
